@@ -1,0 +1,52 @@
+
+#include <iostream>
+using namespace std
+class A{
+public
+	virtual void hi() {
+		cout<<"hi"<<endl;
+		} 
+	void hello() {
+		cout<<"hello"<<endl;
+		}
+};
+class B: Public A{
+Public:
+	void hi(){
+		cout<<"B.hi"<<endl;
+		}
+	void hello() {
+		cout<<"B.Hello"<<endl;
+		}
+};
+int main(){
+	A a;
+	a.hi();
+	B.b;
+	b.hi();
+	A c=b;
+	c.hi;
+	c.hello();
+	b.hello();
+	A*d= &b;
+	/*
+	*       sintax
+	*/
+	(*d).hello();
+	(*d).hi();
+	cout<<endl;
+	B*pb=static.cast<B*>(d);
+	pb->hi();
+	pb->hello();
+	cout<<endl;
+	d->hi();
+	d->hello();
+	Cout<<endl;
+	return 0;
+}
+
+/*
+*       esto igual que el covid, fue creado de casualidad...
+*
+*
+*/
